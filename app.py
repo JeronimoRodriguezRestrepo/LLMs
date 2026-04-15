@@ -21,7 +21,12 @@ with st.sidebar:
     
     model_option = st.selectbox(
         "Selecciona el Modelo",
-        ["llama3-8b-8192", "llama3-70b-8192", "mixtral-8x7b-32768", "gemma-7b-it"]
+        [
+            "llama-3.1-8b-instant",   # El sucesor directo y rápido
+            "llama-3.3-70b-versatile", # Muy potente y equilibrado
+            "llama-3.1-70b-versatile", 
+            "mixtral-8x7b-32768"
+        ]
     )
     
     st.subheader("Hiperparámetros de Inferencia")
